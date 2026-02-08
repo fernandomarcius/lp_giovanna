@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Agendamento de Consultoria | Giovanna Seabra</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="animations.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0a192f", // Deep Navy Blue
+                        "secondary": "#3a3a3a", // Graphite Gray
+                        "accent": "#c5a059", // Matte Gold
+                        "background-light": "#f8f9fa",
+                        "background-dark": "#0a192f",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                    backgroundImage: {
+                        'map-pattern': "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-secondary dark:text-gray-200 antialiased overflow-x-hidden flex flex-col min-h-screen">
+    <header class="sticky top-0 z-50 w-full bg-primary/95 backdrop-blur-sm border-b border-white/10">
+        <div class="px-4 md:px-10 py-4 flex items-center justify-between mx-auto max-w-7xl">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="flex items-center justify-center">
+                        <img src="assets/Logo.png" alt="Giovanna Seabra Logo" class="h-10 w-auto object-contain">
+                    </div>
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-semibold text-gray-300 hover:text-accent transition-colors uppercase tracking-wide"
+                    href="index.html">Home</a>
+                <a class="text-sm font-semibold text-gray-300 hover:text-accent transition-colors uppercase tracking-wide"
+                    href="servicos.html">Serviços</a>
+                <a class="text-sm font-semibold text-gray-300 hover:text-accent transition-colors uppercase tracking-wide"
+                    href="abordagem.html">Abordagem</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="agendar.html"
+                    class="hidden md:flex items-center justify-center rounded-sm h-10 px-6 bg-accent text-white text-sm font-bold shadow-md hover:bg-[#b08d4b] transition-all uppercase tracking-wide">
+                    <span class="truncate">Agendar Consulta</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="flex-grow w-full bg-background-light dark:bg-background-dark py-12 md:py-16">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div
+                class="grid grid-cols-1 lg:grid-cols-12 gap-12 bg-white dark:bg-gray-900 rounded-sm shadow-2xl overflow-hidden min-h-[800px]">
+                <div
+                    class="lg:col-span-5 bg-primary p-8 md:p-12 text-white relative flex flex-col justify-between overflow-hidden reveal-from-left">
+                    <div class="absolute inset-0 bg-map-pattern opacity-10 pointer-events-none mix-blend-overlay"></div>
+                    <div class="relative z-10">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/10 backdrop-blur-sm border border-white/20 mb-8">
+                            <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                            <span class="text-[10px] font-bold tracking-widest uppercase">Sessão Exclusiva</span>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-black leading-tight mb-6">
+                            Consulta de <span class="text-accent">Diagnóstico Estratégico</span>
+                        </h2>
+                        <div class="space-y-6 text-gray-300 font-light leading-relaxed">
+                            <p>
+                                Esta sessão de 60 minutos é desenhada especificamente para líderes empresariais e
+                                gestores que necessitam de clareza jurídica em ambientes complexos.
+                            </p>
+                            <p>
+                                Durante nossa conversa, focaremos em identificar vulnerabilidades contratuais e
+                                oportunidades em licitações públicas, estabelecendo um roteiro inicial para governança
+                                corporativa robusta.
+                            </p>
+                        </div>
+                        <div class="mt-10 space-y-4">
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-accent mt-1">shield</span>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm uppercase tracking-wide">Mitigação de Riscos
+                                    </h4>
+                                    <p class="text-xs text-gray-400 mt-1">Análise preliminar de passivos e conformidade
+                                        regulatória.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-accent mt-1">gavel</span>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm uppercase tracking-wide">Contratos Públicos
+                                    </h4>
+                                    <p class="text-xs text-gray-400 mt-1">Estratégias para maximizar êxito em processos
+                                        licitatórios.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-accent mt-1">corporate_fare</span>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm uppercase tracking-wide">Governança</h4>
+                                    <p class="text-xs text-gray-400 mt-1">Estruturação de conselhos e acordos de
+                                        acionistas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative z-10 mt-12 pt-8 border-t border-white/10">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full border-2 border-accent overflow-hidden">
+                                <img alt="Giovanna Seabra"
+                                    class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLlzSXRszJwRGJGDRg-VjtR_qqvoQXXJHoWcsDOUPTB2Us-1_R5Ws_znm2NMBsX8-1Mm4VB5OZRrWEDMhJWAkT6sfMUKw0QlNp_K8ZmiyAKiwwWy-ZCLdJZH0a96_yZ9M8PGn4pppz81djETUs7sSXFKfoW9Qz50oo_MEn6DbiwNjV9lhQH6PORUnqvLnpIKM6h7wA9foGNrGy8trFRl5_CsFAqQvUapsjEqOCwTXuiLpr43HN1_u06ZKbZu7HU_nq7dglXMR-gFE" />
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-white">Giovanna Seabra</p>
+                                <p class="text-xs text-accent uppercase tracking-wider">Advogada Sênior</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 p-8 md:p-12 bg-white dark:bg-gray-900 overflow-y-auto reveal-from-right">
+                    <div class="mb-10">
+                        <h3
+                            class="text-lg font-bold text-primary dark:text-white uppercase tracking-wide mb-6 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-accent">calendar_month</span>
+                            Selecione Data e Horário
+                        </h3>
+                        <div
+                            class="bg-gray-50 dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-700 p-6">
+                            <div class="flex justify-between items-center mb-6">
+                                <button
+                                    class="p-1 hover:bg-gray-200 dark:hover:bg-gray-700 rounded transition-colors text-primary dark:text-white">
+                                    <span class="material-symbols-outlined">chevron_left</span>
+                                </button>
+                                <span class="text-primary dark:text-white font-bold text-lg">Outubro 2023</span>
+                                <button
+                                    class="p-1 hover:bg-gray-200 dark:hover:bg-gray-700 rounded transition-colors text-primary dark:text-white">
+                                    <span class="material-symbols-outlined">chevron_right</span>
+                                </button>
+                            </div>
+                            <div class="grid grid-cols-7 gap-2 mb-6 text-center text-sm">
+                                <div class="text-gray-400 font-medium py-2">D</div>
+                                <div class="text-gray-400 font-medium py-2">S</div>
+                                <div class="text-gray-400 font-medium py-2">T</div>
+                                <div class="text-gray-400 font-medium py-2">Q</div>
+                                <div class="text-gray-400 font-medium py-2">Q</div>
+                                <div class="text-gray-400 font-medium py-2">S</div>
+                                <div class="text-gray-400 font-medium py-2">S</div>
+                                <div class="p-2"></div>
+                                <div class="p-2"></div>
+                                <button class="p-2 text-gray-400 cursor-not-allowed">1</button>
+                                <button class="p-2 text-gray-400 cursor-not-allowed">2</button>
+                                <button
+                                    class="p-2 text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded">3</button>
+                                <button
+                                    class="p-2 text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded">4</button>
+                                <button class="p-2 text-gray-400 cursor-not-allowed">5</button>
+                                <button class="p-2 text-gray-400 cursor-not-allowed">6</button>
+                                <button class="p-2 text-gray-400 cursor-not-allowed">7</button>
+                                <button
+                                    class="p-2 text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded">8</button>
+                                <button
+                                    class="p-2 bg-primary text-white rounded font-bold shadow-md ring-2 ring-accent ring-offset-2 ring-offset-white dark:ring-offset-gray-800">9</button>
+                                <button
+                                    class="p-2 text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded">10</button>
+                                <button
+                                    class="p-2 text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded">11</button>
+                                <button class="p-2 text-gray-400 cursor-not-allowed">12</button>
+                                <button class="p-2 text-gray-400 cursor-not-allowed">13</button>
+                                <button
+                                    class="p-2 text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded">14</button>
+                            </div>
+                            <div class="border-t border-gray-200 dark:border-gray-700 pt-6">
+                                <h4 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">Horários
+                                    Disponíveis (09 Out)</h4>
+                                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                                    <button
+                                        class="py-2 px-3 rounded border border-gray-300 dark:border-gray-600 text-primary dark:text-gray-300 text-sm hover:border-accent hover:text-accent transition-colors">09:00</button>
+                                    <button
+                                        class="py-2 px-3 rounded bg-accent text-white text-sm font-bold shadow-md border border-accent">11:00</button>
+                                    <button
+                                        class="py-2 px-3 rounded border border-gray-300 dark:border-gray-600 text-primary dark:text-gray-300 text-sm hover:border-accent hover:text-accent transition-colors">14:30</button>
+                                    <button
+                                        class="py-2 px-3 rounded border border-gray-300 dark:border-gray-600 text-primary dark:text-gray-300 text-sm hover:border-accent hover:text-accent transition-colors">16:00</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            class="text-lg font-bold text-primary dark:text-white uppercase tracking-wide mb-6 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-accent">edit_document</span>
+                            Seus Dados
+                        </h3>
+                        <form class="space-y-5">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div class="space-y-1">
+                                    <label
+                                        class="text-xs font-bold text-secondary dark:text-gray-400 uppercase tracking-wide ml-1"
+                                        for="fullName">Nome Completo</label>
+                                    <input
+                                        class="w-full px-4 py-3 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-primary dark:text-white focus:ring-1 focus:ring-accent focus:border-accent outline-none transition-all placeholder:text-gray-400"
+                                        id="fullName" placeholder="Ex: Maria Silva" type="text" />
+                                </div>
+                                <div class="space-y-1">
+                                    <label
+                                        class="text-xs font-bold text-secondary dark:text-gray-400 uppercase tracking-wide ml-1"
+                                        for="companyName">Empresa</label>
+                                    <input
+                                        class="w-full px-4 py-3 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-primary dark:text-white focus:ring-1 focus:ring-accent focus:border-accent outline-none transition-all placeholder:text-gray-400"
+                                        id="companyName" placeholder="Ex: Silva &amp; Associados" type="text" />
+                                </div>
+                            </div>
+                            <div class="space-y-1">
+                                <label
+                                    class="text-xs font-bold text-secondary dark:text-gray-400 uppercase tracking-wide ml-1"
+                                    for="corpEmail">E-mail Corporativo</label>
+                                <input
+                                    class="w-full px-4 py-3 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-primary dark:text-white focus:ring-1 focus:ring-accent focus:border-accent outline-none transition-all placeholder:text-gray-400"
+                                    id="corpEmail" placeholder="nome@empresa.com.br" type="email" />
+                            </div>
+                            <div class="space-y-1">
+                                <label
+                                    class="text-xs font-bold text-secondary dark:text-gray-400 uppercase tracking-wide ml-1"
+                                    for="challenge">Descreva seu desafio jurídico</label>
+                                <textarea
+                                    class="w-full px-4 py-3 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-primary dark:text-white focus:ring-1 focus:ring-accent focus:border-accent outline-none transition-all placeholder:text-gray-400 resize-none"
+                                    id="challenge" placeholder="Breve resumo do contexto para prepararmos a reunião..."
+                                    rows="4"></textarea>
+                            </div>
+                            <div class="pt-4">
+                                <button
+                                    class="w-full bg-accent hover:bg-[#b08d4b] text-white font-bold py-4 rounded shadow-lg shadow-accent/20 transition-all active:scale-[0.99] uppercase tracking-widest text-sm flex items-center justify-center gap-2 group"
+                                    type="button">
+                                    Confirmar Agendamento
+                                    <span
+                                        class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                </button>
+                                <p class="text-center text-xs text-gray-500 mt-4">Ao confirmar, você concorda com nossa
+                                    política de privacidade e tratamento de dados.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-primary text-white py-16 border-t border-white/10">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-10">
+                <div class="flex items-center gap-4">
+                    <div class="h-12 w-auto border border-accent/30 rounded-sm overflow-hidden bg-white/5">
+                        <img src="assets/Logo.png" alt="Giovanna Seabra Logo" class="h-full w-auto object-contain p-1">
+                    </div>
+                    <div>
+                        <p class="font-display font-bold text-xl tracking-wide">Consultoria Jurídica</p>
+                        <p class="text-xs text-accent uppercase tracking-widest">Direito Corporativo Estratégico</p>
+                    </div>
+                </div>
+                <div class="flex gap-8 text-sm font-medium text-gray-400">
+                    <a class="hover:text-accent transition-colors uppercase tracking-wide text-xs" href="#">Política de
+                        Privacidade</a>
+                    <a class="hover:text-accent transition-colors uppercase tracking-wide text-xs" href="#">Termos de
+                        Uso</a>
+                    <a class="hover:text-accent transition-colors uppercase tracking-wide text-xs" href="#">LinkedIn</a>
+                </div>
+                <p class="text-xs text-gray-500 font-light">© 2023 Consultoria Jurídica. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

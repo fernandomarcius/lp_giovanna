@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Consultoria Jurídica Corporativa &amp; Governança</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="animations.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0a192f", // Deep Navy Blue
+                        "secondary": "#3a3a3a", // Graphite Gray
+                        "accent": "#c5a059", // Matte Gold
+                        "background-light": "#f8f9fa",
+                        "background-dark": "#0a192f",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                    backgroundImage: {
+                        'map-pattern': "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-secondary dark:text-gray-200 antialiased overflow-x-hidden">
+    <div class="relative flex flex-col w-full min-h-screen">
+        <header class="sticky top-0 z-50 w-full bg-primary/95 backdrop-blur-sm border-b border-white/10">
+            <div class="px-4 md:px-10 py-4 flex items-center justify-between mx-auto max-w-7xl">
+                <div class="flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-3 group">
+                        <div class="flex items-center justify-center">
+                            <img src="assets/Logo.png" alt="Giovanna Seabra Logo" class="h-10 w-auto object-contain">
+                        </div>
+                    </a>
+                </div>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-semibold text-accent border-b-2 border-accent transition-colors uppercase tracking-wide"
+                        href="index.html">Home</a>
+                    <a class="text-sm font-semibold text-gray-300 hover:text-accent transition-colors uppercase tracking-wide"
+                        href="servicos.html">Serviços</a>
+                    <a class="text-sm font-semibold text-gray-300 hover:text-accent transition-colors uppercase tracking-wide"
+                        href="abordagem.html">Abordagem</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <a href="agendar.html"
+                        class="hidden md:flex items-center justify-center rounded-sm h-10 px-6 bg-accent text-white text-sm font-bold shadow-md hover:bg-[#b08d4b] transition-all uppercase tracking-wide">
+                        <span class="truncate">Agendar Consulta</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section class="relative w-full">
+            <div class="relative min-h-[640px] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+                style="background-image: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.7)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAglo9FZH7siBUMK45bYFsAkET8Jpp7rR9ZGvmkLbd8n_Bl_ngDF4eDKVSpWCA_z_9TRxVtYyicerWGXryij7Zdy5aU7IjgqZcXTjigPBLN8KVbRetD-mVKo58G88xmiabZbCk86Vfs3hzRas4oEeFIIx1YMbHcgqpvCOkzXbuXGNK8CpSiChV2pnLwBS-NadhTd6mmEwiOlsz6UT8MZ19T3WrIPvvOxCE9_aq4BxvDARDPgXz-5iuge-zsA3IijZK94PQ6wg6M5Ek');">
+                <div class="absolute inset-0 bg-map-pattern opacity-20 pointer-events-none mix-blend-overlay"></div>
+                <div
+                    class="container mx-auto px-4 py-20 flex flex-col items-center text-center max-w-4xl gap-8 relative z-10">
+                    <!-- Badge Removed -->
+                    <h1
+                        class="text-white text-4xl md:text-6xl font-black leading-tight tracking-tight drop-shadow-lg reveal-on-scroll">
+                        Gestão Jurídica Estratégica e <span class="text-accent italic">Governança Corporativa</span>
+                    </h1>
+                    <p
+                        class="text-gray-300 text-base md:text-xl font-light leading-relaxed max-w-2xl mx-auto border-t border-gray-600 pt-6 reveal-on-scroll">
+                        Empoderando negócios com mais de 10 anos de consultoria especializada em Contratos Públicos e
+                        Direito do Trabalho. MBA em Direito Empresarial focado em eficiência e mitigação de riscos.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-5 w-full justify-center pt-6 reveal-on-scroll">
+                        <button
+                            class="flex items-center justify-center rounded-sm h-14 px-10 bg-accent text-white text-base font-bold shadow-lg shadow-accent/20 hover:bg-[#b08d4b] transition-all uppercase tracking-wide">
+                            Agendar Consulta
+                        </button>
+                        <a href="servicos.html"
+                            class="flex items-center justify-center rounded-sm h-14 px-10 bg-transparent hover:bg-white/5 border border-white/30 backdrop-blur-sm text-white text-base font-bold transition-all uppercase tracking-wide">
+                            Saiba Mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div
+            class="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 relative z-20 -mt-8 mx-4 md:mx-auto max-w-6xl rounded-lg shadow-xl">
+            <div class="px-6 py-8">
+                <div
+                    class="grid grid-cols-1 md:grid-cols-3 gap-6 divide-y md:divide-y-0 md:divide-x divide-gray-100 dark:divide-gray-800 reveal-stagger">
+                    <div class="flex flex-col items-center justify-center gap-2 p-2 text-center">
+                        <span
+                            class="material-symbols-outlined text-primary dark:text-accent text-4xl mb-1">military_tech</span>
+                        <p class="text-4xl font-black text-primary dark:text-white">10+</p>
+                        <p class="text-xs font-bold text-secondary dark:text-gray-400 uppercase tracking-widest">Anos de
+                            Experiência</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 p-2 text-center">
+                        <span
+                            class="material-symbols-outlined text-primary dark:text-accent text-4xl mb-1">school</span>
+                        <p class="text-4xl font-black text-primary dark:text-white">MBA</p>
+                        <p class="text-xs font-bold text-secondary dark:text-gray-400 uppercase tracking-widest">Direito
+                            Empresarial</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 p-2 text-center">
+                        <span class="material-symbols-outlined text-primary dark:text-accent text-4xl mb-1">gavel</span>
+                        <p class="text-4xl font-black text-primary dark:text-white">Global</p>
+                        <p class="text-xs font-bold text-secondary dark:text-gray-400 uppercase tracking-widest">Casos
+                            de Arbitragem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="py-24 bg-background-light dark:bg-background-dark bg-map-pattern" id="profile">
+            <div class="container mx-auto px-4 max-w-7xl">
+                <div class="flex flex-col lg:flex-row gap-16 items-center">
+                    <div class="w-full lg:w-1/2 relative">
+                        <div
+                            class="relative rounded-sm overflow-hidden shadow-2xl aspect-[4/5] bg-gray-200 border-8 border-white dark:border-gray-800">
+                            <img alt="Retrato profissional de um advogado corporativo em um escritório moderno"
+                                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 reveal-on-scroll"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLlzSXRszJwRGJGDRg-VjtR_qqvoQXXJHoWcsDOUPTB2Us-1_R5Ws_znm2NMBsX8-1Mm4VB5OZRrWEDMhJWAkT6sfMUKw0QlNp_K8ZmiyAKiwwWy-ZCLdJZH0a96_yZ9M8PGn4pppz81djETUs7sSXFKfoW9Qz50oo_MEn6DbiwNjV9lhQH6PORUnqvLnpIKM6h7wA9foGNrGy8trFRl5_CsFAqQvUapsjEqOCwTXuiLpr43HN1_u06ZKbZu7HU_nq7dglXMR-gFE" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
+                            <div class="absolute bottom-8 left-8 text-white border-l-4 border-accent pl-4">
+                                <p class="font-bold text-2xl tracking-tight">Consultor Sênior</p>
+                                <p class="text-sm font-light text-accent uppercase tracking-wider mt-1">Especialista em
+                                    Estratégia Corporativa</p>
+                            </div>
+                        </div>
+                        <div class="absolute -z-10 -bottom-6 -left-6 w-32 h-32 bg-accent/20"></div>
+                        <div class="absolute -z-10 -top-6 -right-6 w-32 h-32 bg-primary/10 dark:bg-white/5"></div>
+                    </div>
+                    <div class="w-full lg:w-1/2 flex flex-col gap-8 reveal-on-scroll">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="h-px w-8 bg-accent"></div>
+                                <h2 class="text-accent font-bold text-xs tracking-widest uppercase">Perfil Profissional
+                                </h2>
+                            </div>
+                            <h3 class="text-4xl md:text-5xl font-black text-primary dark:text-white mb-8 leading-tight">
+                                Expertise Além dos Tribunais
+                            </h3>
+                            <p class="text-lg text-secondary dark:text-gray-300 leading-relaxed mb-6 font-light">
+                                Aproveitando uma década de liderança em departamentos jurídicos e arbitragem
+                                internacional para fornecer soluções empresariais estratégicas. Minha abordagem combina
+                                análise jurídica rigorosa com um entendimento pragmático da dinâmica corporativa.
+                            </p>
+                            <p
+                                class="text-base text-secondary dark:text-gray-400 leading-relaxed border-l-2 border-gray-200 pl-6 italic">
+                                "Eu não apenas identifico riscos; eu estruturo oportunidades. Seja navegando em
+                                contratos públicos complexos ou reestruturando quadros de governança corporativa, meu
+                                objetivo é garantir que a conformidade legal se torne uma vantagem competitiva."
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6">
+                            <div class="flex gap-5 group">
+                                <div
+                                    class="w-14 h-14 rounded-sm bg-primary text-white flex items-center justify-center shrink-0 shadow-lg group-hover:bg-accent transition-colors">
+                                    <span class="material-symbols-outlined">verified_user</span>
+                                </div>
+                                <div>
+                                    <h4
+                                        class="font-bold text-primary dark:text-white mb-2 uppercase text-sm tracking-wide">
+                                        Liderança Estratégica</h4>
+                                    <p class="text-sm text-secondary dark:text-gray-400 leading-relaxed">Histórico
+                                        comprovado liderando departamentos jurídicos complexos em ambientes de alta
+                                        pressão.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-5 group">
+                                <div
+                                    class="w-14 h-14 rounded-sm bg-primary text-white flex items-center justify-center shrink-0 shadow-lg group-hover:bg-accent transition-colors">
+                                    <span class="material-symbols-outlined">public</span>
+                                </div>
+                                <div>
+                                    <h4
+                                        class="font-bold text-primary dark:text-white mb-2 uppercase text-sm tracking-wide">
+                                        Foco Internacional</h4>
+                                    <p class="text-sm text-secondary dark:text-gray-400 leading-relaxed">Atuação em
+                                        Múltiplas Arbitragens Internacionais e gestão de contratos transfronteiriços.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-white dark:bg-gray-900" id="services">
+            <div class="container mx-auto px-4 max-w-7xl">
+                <div class="text-center max-w-3xl mx-auto mb-20">
+                    <span class="text-accent font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Competências
+                        Essenciais</span>
+                    <h3 class="text-3xl md:text-5xl font-black text-primary dark:text-white mb-6 reveal-on-scroll">
+                        Soluções Jurídicas Abrangentes
+                    </h3>
+                    <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                    <p class="text-secondary dark:text-gray-400 text-lg font-light">
+                        Estratégias jurídicas sob medida projetadas para proteger seus interesses e impulsionar seu
+                        negócio.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal-stagger">
+                    <div
+                        class="group relative bg-gray-50 dark:bg-[#0d213f] p-10 rounded-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border-t-4 border-transparent hover:border-accent">
+                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span
+                                class="material-symbols-outlined text-8xl text-primary dark:text-white">description</span>
+                        </div>
+                        <div
+                            class="w-16 h-16 bg-white dark:bg-primary rounded-full shadow-md flex items-center justify-center mb-8 text-primary dark:text-accent group-hover:bg-accent group-hover:text-white transition-colors relative z-10">
+                            <span class="material-symbols-outlined text-3xl">description</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-primary dark:text-white mb-4 uppercase tracking-tight">
+                            Contratos Públicos</h4>
+                        <p class="text-secondary dark:text-gray-300 text-sm leading-relaxed mb-8 font-light">
+                            Navegação especializada em licitações governamentais, preparação de propostas e
+                            administração de contratos para garantir conformidade e maximizar taxas de sucesso no setor
+                            público.
+                        </p>
+                        <a class="inline-flex items-center text-xs font-bold text-accent uppercase tracking-widest hover:text-primary dark:hover:text-white transition-colors"
+                            href="servicos.html#contratos">
+                            Saiba mais <span class="material-symbols-outlined text-base ml-2">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div
+                        class="group relative bg-gray-50 dark:bg-[#0d213f] p-10 rounded-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border-t-4 border-transparent hover:border-accent">
+                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span
+                                class="material-symbols-outlined text-8xl text-primary dark:text-white">account_balance</span>
+                        </div>
+                        <div
+                            class="w-16 h-16 bg-white dark:bg-primary rounded-full shadow-md flex items-center justify-center mb-8 text-primary dark:text-accent group-hover:bg-accent group-hover:text-white transition-colors relative z-10">
+                            <span class="material-symbols-outlined text-3xl">account_balance</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-primary dark:text-white mb-4 uppercase tracking-tight">
+                            Governança Corporativa</h4>
+                        <p class="text-secondary dark:text-gray-300 text-sm leading-relaxed mb-8 font-light">
+                            Estruturação de operações de conselho, quadros de conformidade e acordos de acionistas para
+                            construir organizações resilientes que atendam aos mais altos padrões de responsabilidade.
+                        </p>
+                        <a class="inline-flex items-center text-xs font-bold text-accent uppercase tracking-widest hover:text-primary dark:hover:text-white transition-colors"
+                            href="servicos.html#governanca">
+                            Saiba mais <span class="material-symbols-outlined text-base ml-2">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div
+                        class="group relative bg-gray-50 dark:bg-[#0d213f] p-10 rounded-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border-t-4 border-transparent hover:border-accent">
+                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span
+                                class="material-symbols-outlined text-8xl text-primary dark:text-white">diversity_3</span>
+                        </div>
+                        <div
+                            class="w-16 h-16 bg-white dark:bg-primary rounded-full shadow-md flex items-center justify-center mb-8 text-primary dark:text-accent group-hover:bg-accent group-hover:text-white transition-colors relative z-10">
+                            <span class="material-symbols-outlined text-3xl">diversity_3</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-primary dark:text-white mb-4 uppercase tracking-tight">Direito
+                            do Trabalho</h4>
+                        <p class="text-secondary dark:text-gray-300 text-sm leading-relaxed mb-8 font-light">
+                            Gestão estratégica da força de trabalho, resolução de disputas e desenvolvimento de
+                            políticas para promover um ambiente de trabalho produtivo, mitigando riscos de
+                            responsabilidade.
+                        </p>
+                        <a class="inline-flex items-center text-xs font-bold text-accent uppercase tracking-widest hover:text-primary dark:hover:text-white transition-colors"
+                            href="servicos.html#trabalho">
+                            Saiba mais <span class="material-symbols-outlined text-base ml-2">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-background-light dark:bg-background-dark overflow-hidden bg-map-pattern" id="approach">
+            <div class="container mx-auto px-4 max-w-7xl">
+                <div class="flex flex-col md:flex-row gap-16 items-center">
+                    <div class="w-full md:w-1/2 order-2 md:order-1 reveal-from-left">
+                        <div class="relative shadow-2xl h-[600px] border-l-8 border-accent">
+                            <img alt="Equipe revisando documentos em uma mesa com laptop e gráficos"
+                                class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLtp3J9ItppmULS0Ko7b4RPU95NJdSBCQCFaFljeNDOa3TCNrrsqAC_KIHWTmZnK3JF8h9FRV4Oq3n0d6dEDZGJPlx7jrBTa0V6lcf2ildR-gC0Xpw-vvcMJV0du_ECz-2IsU-cEV15fx41lzVmOSWT7gBcyOGXJSG5iVvX2YgAbuI6pDc94D-Czqncnc6vcuDxBnXdlDR80mGBVByjHRTXdKKHrjHI_AKOYtI0_qpol-1QM478682-P8wZOMQlVg7_JlGVTfRoWw" />
+                            <div class="absolute inset-0 bg-primary/40 mix-blend-multiply"></div>
+                            <div
+                                class="absolute bottom-0 right-0 bg-white dark:bg-gray-800 p-8 max-w-xs shadow-lg hidden lg:block reveal-on-scroll">
+                                <p class="font-serif text-3xl text-primary dark:text-accent italic">"Pragmatismo e
+                                    excelência."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 order-1 md:order-2 reveal-from-right">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="h-px w-8 bg-accent"></div>
+                            <h2 class="text-accent font-bold text-xs tracking-widest uppercase">Abordagem Estratégica
+                            </h2>
+                        </div>
+                        <h3 class="text-3xl md:text-5xl font-black text-primary dark:text-white mb-10 leading-tight">
+                            Estratégia Jurídica Focada no Negócio
+                        </h3>
+                        <div id="index-timeline-section" class="space-y-0 relative ml-5 reveal-stagger">
+                            <!-- Timeline Track -->
+                            <div
+                                class="absolute left-0 top-0 bottom-0 w-px border-l border-dashed border-gray-300 dark:border-gray-700">
+                                <div id="index-timeline-progress"
+                                    class="absolute top-0 left-[-1px] w-[3px] bg-accent shadow-[0_0_10px_#C5A059] transition-all duration-75 ease-linear h-0">
+                                </div>
+                            </div>
+                            <h4 class="text-xl font-bold text-primary dark:text-white mb-3 uppercase tracking-wide">
+                                Análise Diagnóstica</h4>
+                            <p class="text-secondary dark:text-gray-400 text-sm leading-relaxed">Começamos
+                                compreendendo profundamente seu modelo de negócio, desafios imediatos e objetivos de
+                                longo prazo para identificar riscos e oportunidades jurídicas.</p>
+                        </div>
+                        <div class="relative pl-12 pb-12">
+                            <h4 class="text-xl font-bold text-primary dark:text-white mb-3 uppercase tracking-wide">
+                                Roteiro Estratégico</h4>
+                            <p class="text-secondary dark:text-gray-400 text-sm leading-relaxed">Desenvolvimento de
+                                uma estrutura jurídica personalizada que se alinha aos seus objetivos operacionais,
+                                com foco em eficiência e medidas preventivas.</p>
+                        </div>
+                        <div class="relative pl-12">
+                            <h4 class="text-xl font-bold text-primary dark:text-white mb-3 uppercase tracking-wide">
+                                Execução &amp; Monitoramento</h4>
+                            <p class="text-secondary dark:text-gray-400 text-sm leading-relaxed">Implementação de
+                                soluções com orientação prática e monitoramento contínuo para adaptação às mudanças
+                                regulatórias e crescimento do negócio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <section class="py-24 bg-primary relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pointer-events-none"
+            style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM22.485 0l.83.828-1.415 1.415L19.658 0h2.827zM0 22.485l.828.83 1.415-1.415L0 19.658v2.827zM0 54.627l.828.83 1.415-1.415L0 51.8v2.827zM57.456 0h2.544v2.544l-2.544-2.544zM25.314 0h2.544v2.544l-2.544-2.544zM0 25.314v2.544h2.544L0 25.314zM0 57.456v2.544h2.544L0 57.456zM29.98 29.98l.828.828-1.415 1.415-.828-.828.828-.828z\' fill=\'%23ffffff\' fill-opacity=\'1\' fill-rule=\'evenodd\'/%3E%3C/svg%3E');">
+        </div>
+        <div class="container mx-auto px-4 max-w-5xl relative z-10">
+            <div
+                class="bg-white dark:bg-gray-900 rounded-sm shadow-2xl overflow-hidden flex flex-col md:flex-row border border-gray-200 dark:border-gray-700 reveal-on-scroll">
+                <div
+                    class="w-full md:w-2/5 bg-gray-100 dark:bg-gray-800 p-12 flex flex-col justify-between border-r border-gray-200 dark:border-gray-700">
+                    <div>
+                        <h3 class="text-2xl font-black text-primary dark:text-white mb-6 uppercase tracking-tight">
+                            Solicite uma Consulta</h3>
+                        <p class="text-secondary dark:text-gray-400 mb-10 text-sm font-light leading-relaxed">
+                            Pronto para garantir o futuro do seu negócio? Preencha o formulário para agendar uma
+                            discussão preliminar sobre suas necessidades jurídicas.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4 text-secondary dark:text-gray-300 group">
+                                <div
+                                    class="w-10 h-10 rounded bg-white dark:bg-primary flex items-center justify-center text-accent shadow-sm group-hover:bg-accent group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-xl">mail</span>
+                                </div>
+                                <span class="text-sm font-bold">contato@consultoriajuridica.com.br</span>
+                            </div>
+                            <div class="flex items-center gap-4 text-secondary dark:text-gray-300 group">
+                                <div
+                                    class="w-10 h-10 rounded bg-white dark:bg-primary flex items-center justify-center text-accent shadow-sm group-hover:bg-accent group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-xl">phone</span>
+                                </div>
+                                <span class="text-sm font-bold">+55 (11) 99999-9999</span>
+                            </div>
+                            <div class="flex items-center gap-4 text-secondary dark:text-gray-300 group">
+                                <div
+                                    class="w-10 h-10 rounded bg-white dark:bg-primary flex items-center justify-center text-accent shadow-sm group-hover:bg-accent group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-xl">location_on</span>
+                                </div>
+                                <span class="text-sm font-bold">Av. Paulista, 1000, São Paulo, SP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12 pt-8 border-t border-gray-300 dark:border-gray-700">
+                        <p class="text-xs text-gray-500 font-medium">Confidencialidade garantida. Respondemos em até
+                            24h.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-3/5 p-12 bg-white dark:bg-gray-900">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold text-primary dark:text-white uppercase tracking-wider"
+                                    for="name">Nome Completo</label>
+                                <input
+                                    class="w-full px-4 py-3 rounded-sm border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-primary dark:text-white focus:ring-1 focus:ring-accent focus:border-accent outline-none transition-all placeholder:text-gray-400"
+                                    id="name" placeholder="João da Silva" type="text" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold text-primary dark:text-white uppercase tracking-wider"
+                                    for="company">Empresa</label>
+                                <input
+                                    class="w-full px-4 py-3 rounded-sm border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-primary dark:text-white focus:ring-1 focus:ring-accent focus:border-accent outline-none transition-all placeholder:text-gray-400"
+                                    id="company" placeholder="Empresa Ltda." type="text" />
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold text-primary dark:text-white uppercase tracking-wider"
+                                for="email">E-mail Corporativo</label>
+                            <input
+                                class="w-full px-4 py-3 rounded-sm border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-primary dark:text-white focus:ring-1 focus:ring-accent focus:border-accent outline-none transition-all placeholder:text-gray-400"
+                                id="email" placeholder="joao@empresa.com.br" type="email" />
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold text-primary dark:text-white uppercase tracking-wider"
+                                for="message">Como podemos ajudar?</label>
+                            <textarea
+                                class="w-full px-4 py-3 rounded-sm border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-primary dark:text-white focus:ring-1 focus:ring-accent focus:border-accent outline-none transition-all placeholder:text-gray-400"
+                                id="message" placeholder="Descreva brevemente suas necessidades jurídicas..."
+                                rows="4"></textarea>
+                        </div>
+                        <button
+                            class="w-full bg-accent hover:bg-[#b08d4b] text-white font-bold py-4 rounded-sm shadow-md transition-all active:scale-[0.98] uppercase tracking-wider text-sm mt-4"
+                            type="button">
+                            Enviar Solicitação
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-primary text-white py-16 border-t border-white/10">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-10">
+                <div class="flex items-center gap-4">
+                    <div class="h-12 w-auto flex items-center justify-center bg-white/10 rounded overflow-hidden">
+                        <img src="assets/Logo.png" alt="Giovanna Seabra Logo" class="h-full w-auto object-contain">
+                    </div>
+                    <div>
+                        <p class="font-black text-xl tracking-tight uppercase">Consultoria Jurídica</p>
+                        <p class="text-xs text-gray-400 uppercase tracking-widest mt-1">Direito Corporativo
+                            Estratégico</p>
+                    </div>
+                </div>
+                <div class="flex gap-8 text-sm font-medium text-gray-400">
+                    <a class="hover:text-accent transition-colors uppercase tracking-wide text-xs" href="#">Política
+                        de Privacidade</a>
+                    <a class="hover:text-accent transition-colors uppercase tracking-wide text-xs" href="#">Termos
+                        de Uso</a>
+                    <a class="hover:text-accent transition-colors uppercase tracking-wide text-xs" href="#">LinkedIn</a>
+                </div>
+                <p class="text-xs text-gray-500 font-light">© 2023 Consultoria Jurídica. Todos os direitos
+                    reservados.</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
