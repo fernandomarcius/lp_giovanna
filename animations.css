@@ -66,3 +66,93 @@
     opacity: 1;
     transform: translateX(0);
 }
+
+/* ===========================
+   Service Page Animations
+   =========================== */
+
+/* Service block accent bar on hover */
+.service-block {
+    position: relative;
+    padding-left: 1rem;
+}
+
+.service-block.reveal-visible {
+    transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1),
+                transform 1s cubic-bezier(0.2, 0.8, 0.2, 1),
+                background-color 0.4s ease;
+}
+
+.service-block::before {
+    content: '';
+    position: absolute;
+    left: -0.5rem;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #C5A059;
+    transform: scaleY(0);
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transform-origin: bottom;
+}
+
+.service-block:hover::before {
+    transform: scaleY(1);
+}
+
+.service-block:hover {
+    background-color: rgba(197, 160, 89, 0.04);
+}
+
+.dark .service-block:hover {
+    background-color: rgba(197, 160, 89, 0.07);
+}
+
+/* Service list item micro-interactions */
+.service-list li {
+    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.service-list li:hover {
+    transform: translateX(6px);
+}
+
+.service-list li:hover > span.bg-accent {
+    transform: scale(2);
+    transition: transform 0.3s ease;
+}
+
+/* Service icon hover animation */
+.service-icon {
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.service-block:hover .service-icon {
+    transform: scale(1.1);
+}
+
+/* Differential card icon animation */
+.diff-card .material-symbols-outlined {
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.diff-card:hover .material-symbols-outlined {
+    transform: scale(1.15);
+}
+
+/* Extend stagger support to 10 children */
+.reveal-stagger.reveal-visible > *:nth-child(7) {
+    transition-delay: 0.7s;
+}
+
+.reveal-stagger.reveal-visible > *:nth-child(8) {
+    transition-delay: 0.8s;
+}
+
+.reveal-stagger.reveal-visible > *:nth-child(9) {
+    transition-delay: 0.9s;
+}
+
+.reveal-stagger.reveal-visible > *:nth-child(10) {
+    transition-delay: 1.0s;
+}
