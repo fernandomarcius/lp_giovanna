@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <a href="index.html" class="${getLinkClass('index.html')}">Home</a>
         <a href="servicos.html" class="${getLinkClass('servicos.html')}">Serviços</a>
         <a href="abordagem.html" class="${getLinkClass('abordagem.html')}">Abordagem</a>
+        <a href="inovacao.html" class="${getLinkClass('inovacao.html')}">Inovação</a>
         <a href="agendar.html" class="w-full py-4 px-6 rounded bg-accent hover:bg-accent-hover text-white uppercase font-bold shadow-md transition-colors mt-4 text-center inline-block">Agendar Consulta</a>
     `;
 
