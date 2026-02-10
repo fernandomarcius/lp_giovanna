@@ -4,63 +4,50 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Serviços Especializados</title>
+    <title>Serviços de Consultoria Jurídica Corporativa | Giovanna Seabra</title>
+    <meta name="description" content="Consultoria jurídica especializada em contratos, governança corporativa, direito do trabalho, compliance e LGPD. Soluções sob medida para empresas." />
+    <meta name="keywords" content="consultoria jurídica, serviços jurídicos, contratos, governança corporativa, direito do trabalho, compliance, LGPD, arbitragem" />
+    <meta name="author" content="Giovanna Seabra" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.consultoriajuridica.com.br/servicos.html" />
+    <meta property="og:title" content="Serviços de Consultoria Jurídica Corporativa | Giovanna Seabra" />
+    <meta property="og:description" content="Soluções jurídicas especializadas em contratos, governança, direito do trabalho e compliance para empresas." />
+    <meta property="og:image" content="https://www.consultoriajuridica.com.br/assets/Logo.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.consultoriajuridica.com.br/servicos.html" />
+    <meta property="twitter:title" content="Serviços de Consultoria Jurídica Corporativa" />
+    <meta property="twitter:description" content="Soluções jurídicas especializadas em contratos, governança, direito do trabalho e compliance para empresas." />
+    <meta property="twitter:image" content="https://www.consultoriajuridica.com.br/assets/Logo.png" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.consultoriajuridica.com.br/servicos.html" />
+
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+
+    <!-- Preload critical fonts -->
+    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/publicsans/v15/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuFpm5ww0pX189fg.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtM.woff2" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700;900&amp;family=Playfair+Display:wght@400;700&amp;display=swap"
         rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
     <link href="animations.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#0a192f", // Deep Navy Blue
-                        "secondary": "#374151", // Graphite Gray
-                        "accent": "#C5A059", // Matte Gold
-                        "accent-hover": "#B08D45",
-                        "background-light": "#FFFFFF",
-                        "background-subtle": "#F9FAFB",
-                        "background-dark": "#0f172a",
-                    },
-                    fontFamily: {
-                        "sans": ["Public Sans", "sans-serif"],
-                        "serif": ["Playfair Display", "serif"],
-                    },
-                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.375rem", "full": "9999px" },
-                    boxShadow: {
-                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
-                    }
-                },
-            },
-        }
-    </script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings:
-                'FILL' 0,
-                'wght' 300,
-                'GRAD' 0,
-                'opsz' 24
-        }
-
-        .icon-gold {
-            font-variation-settings: 'FILL' 1, 'wght' 400;
-            color: #C5A059;
-        }
-    </style>
+    <script src="tailwind-config.js"></script>
 </head>
 
 <body
     class="bg-background-light dark:bg-background-dark font-sans text-secondary dark:text-gray-300 antialiased overflow-x-hidden">
     <div class="relative flex flex-col w-full min-h-screen">
-        <header class="sticky top-0 z-50 w-full bg-primary/95 backdrop-blur-sm border-b border-white/10">
+        <header class="sticky top-0 z-50 w-full bg-primary/95 backdrop-blur-sm border-b border-white/10" role="banner">
             <div class="px-4 md:px-10 py-4 flex items-center justify-between mx-auto max-w-7xl">
                 <div class="flex items-center gap-3">
                     <a href="index.html" class="flex items-center gap-3 group">
@@ -69,11 +56,11 @@
                         </div>
                     </a>
                 </div>
-                <nav class="hidden md:flex items-center gap-8">
+                <nav class="hidden md:flex items-center gap-8" role="navigation" aria-label="Navegação principal">
                     <a class="text-sm font-semibold text-gray-300 hover:text-accent transition-colors uppercase tracking-wide"
                         href="index.html">Home</a>
                     <a class="text-sm font-semibold text-accent border-b-2 border-accent transition-colors uppercase tracking-wide"
-                        href="servicos.html">Serviços</a>
+                        href="servicos.html" aria-current="page">Serviços</a>
                     <a class="text-sm font-semibold text-gray-300 hover:text-accent transition-colors uppercase tracking-wide"
                         href="abordagem.html">Abordagem</a>
                 </nav>
@@ -85,7 +72,7 @@
                 </div>
             </div>
         </header>
-        <main class="flex-grow">
+        <main id="main-content" role="main">
             <section class="relative py-24 md:py-32 bg-primary overflow-hidden">
                 <div
                     class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=2600&amp;q=80')] bg-cover bg-center opacity-20 mix-blend-overlay">
@@ -96,7 +83,7 @@
                         class="inline-block py-1 px-4 mb-8 border-b border-accent text-accent text-xs font-bold uppercase tracking-[0.2em]">Expertise
                         Corporativa</span>
                     <h1
-                        class="text-4xl md:text-6xl font-serif font-bold text-white mb-8 leading-tight tracking-tight reveal-on-scroll">
+                        class="text-4xl md:text-6xl font-display font-bold text-white mb-8 leading-tight tracking-tight reveal-on-scroll">
                         Serviços Especializados
                     </h1>
                     <p class="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed font-light">
@@ -327,7 +314,7 @@
                                 class="inline-flex items-center gap-2 mb-6 px-0 py-1 border-b border-accent text-accent text-xs font-bold uppercase tracking-widest">
                                 Legal Operations
                             </div>
-                            <h2 class="text-3xl md:text-5xl font-serif font-bold mb-8">Consultoria Estratégica para
+                            <h2 class="text-3xl md:text-5xl font-display font-bold mb-8">Consultoria Estratégica para
                                 Departamentos Jurídicos</h2>
                             <p class="text-lg text-gray-300 mb-10 leading-relaxed font-light">
                                 Transformamos seu jurídico interno de um centro de custos para um parceiro estratégico.
@@ -340,7 +327,7 @@
                                         <span class="material-symbols-outlined text-accent text-2xl">analytics</span>
                                     </div>
                                     <div>
-                                        <h4 class="font-bold text-xl mb-2 font-serif">Eficiência Operacional</h4>
+                                        <h4 class="font-bold text-xl mb-2 font-display">Eficiência Operacional</h4>
                                         <p class="text-gray-400 text-sm leading-relaxed">Otimização de fluxos de
                                             trabalho, implementação de legal design e automação.</p>
                                     </div>
@@ -351,7 +338,7 @@
                                         <span class="material-symbols-outlined text-accent text-2xl">query_stats</span>
                                     </div>
                                     <div>
-                                        <h4 class="font-bold text-xl mb-2 font-serif">Gestão Baseada em Dados</h4>
+                                        <h4 class="font-bold text-xl mb-2 font-display">Gestão Baseada em Dados</h4>
                                         <p class="text-gray-400 text-sm leading-relaxed">Criação de KPIs jurídicos e
                                             relatórios gerenciais para tomada de decisão.</p>
                                     </div>
@@ -362,7 +349,7 @@
                                         <span class="material-symbols-outlined text-accent text-2xl">savings</span>
                                     </div>
                                     <div>
-                                        <h4 class="font-bold text-xl mb-2 font-serif">Redução de Custos</h4>
+                                        <h4 class="font-bold text-xl mb-2 font-display">Redução de Custos</h4>
                                         <p class="text-gray-400 text-sm leading-relaxed">Auditoria de contencioso e
                                             gestão eficiente de escritórios terceirizados.</p>
                                     </div>
@@ -376,7 +363,8 @@
                                     class="relative rounded overflow-hidden shadow-2xl border border-white/10 grayscale hover:grayscale-0 transition-all duration-700">
                                     <img alt="Reunião estratégica de consultoria jurídica"
                                         class="w-full h-auto object-cover"
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLtp3J9ItppmULS0Ko7b4RPU95NJdSBCQCFaFljeNDOa3TCNrrsqAC_KIHWTmZnK3JF8h9FRV4Oq3n0d6dEDZGJPlx7jrBTa0V6lcf2ildR-gC0Xpw-vvcMJV0du_ECz-2IsU-cEV15fx41lzVmOSWT7gBcyOGXJSG5iVvX2YgAbuI6pDc94D-Czqncnc6vcuDxBnXdlDR80mGBVByjHRTXdKKHrjHI_AKOYtI0_qpol-1QM478682-P8wZOMQlVg7_JlGVTfRoWw" />
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLtp3J9ItppmULS0Ko7b4RPU95NJdSBCQCFaFljeNDOa3TCNrrsqAC_KIHWTmZnK3JF8h9FRV4Oq3n0d6dEDZGJPlx7jrBTa0V6lcf2ildR-gC0Xpw-vvcMJV0du_ECz-2IsU-cEV15fx41lzVmOSWT7gBcyOGXJSG5iVvX2YgAbuI6pDc94D-Czqncnc6vcuDxBnXdlDR80mGBVByjHRTXdKKHrjHI_AKOYtI0_qpol-1QM478682-P8wZOMQlVg7_JlGVTfRoWw"
+                                        width="900" height="600" loading="lazy" />
                                     <div
                                         class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent pointer-events-none">
                                     </div>
@@ -388,48 +376,43 @@
             </section>
             <section class="py-24 bg-white dark:bg-background-dark">
                 <div class="container mx-auto px-6 max-w-4xl text-center">
-                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-primary dark:text-white mb-6">Pronto para
+                    <h2 class="text-3xl md:text-4xl font-display font-bold text-primary dark:text-white mb-6">Pronto para
                         elevar o nível da sua segurança jurídica?</h2>
                     <p class="text-lg text-secondary dark:text-gray-400 mb-12 max-w-2xl mx-auto font-light">
                         Agende uma conversa diagnóstica sem compromisso e descubra como nossa abordagem personalizada
                         pode proteger e valorizar o seu negócio.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                        <button
-                            class="flex items-center justify-center rounded h-14 px-10 bg-accent text-white text-sm uppercase tracking-widest font-bold shadow-lg shadow-accent/20 hover:bg-accent-hover transition-all hover:-translate-y-1">
+                        <a href="agendar.html"
+                            class="flex items-center justify-center rounded-sm h-14 px-10 bg-accent text-white text-sm uppercase tracking-widest font-bold shadow-lg shadow-accent/20 hover:bg-accent-hover transition-all hover:-translate-y-1">
                             Solicitar Proposta
-                        </button>
-                        <button
-                            class="flex items-center justify-center rounded h-14 px-10 bg-white dark:bg-transparent border border-gray-300 dark:border-gray-600 text-primary dark:text-white text-sm uppercase tracking-widest font-bold hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">
+                        </a>
+                        <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20consultoria%20jurídica" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center justify-center rounded-sm h-14 px-10 bg-white dark:bg-transparent border border-gray-300 dark:border-gray-600 text-primary dark:text-white text-sm uppercase tracking-widest font-bold hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">
                             Fale Conosco no WhatsApp
-                        </button>
+                        </a>
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="bg-primary text-white py-16 border-t border-white/10">
+        <footer class="bg-primary text-white py-16 border-t border-white/10" role="contentinfo">
             <div class="container mx-auto px-4 max-w-7xl">
                 <div class="flex flex-col md:flex-row justify-between items-center gap-10">
                     <div class="flex items-center gap-4">
-                        <div class="h-12 w-auto flex items-center justify-center bg-white/10 rounded overflow-hidden">
-                            <img src="assets/Logo.png" alt="Giovanna Seabra Logo" class="h-full w-auto object-contain">
+                        <div class="h-12 w-auto border border-accent/30 rounded-sm overflow-hidden bg-white/5">
+                            <img src="assets/Logo.png" alt="Giovanna Seabra Logo" class="h-full w-auto object-contain p-1">
                         </div>
                         <div>
-                            <p class="font-black text-xl tracking-tight uppercase">Consultoria Jurídica</p>
-                            <p class="text-xs text-gray-400 uppercase tracking-widest mt-1">Direito Corporativo
-                                Estratégico</p>
+                            <p class="font-display font-bold text-xl tracking-wide">Consultoria Jurídica</p>
+                            <p class="text-xs text-accent uppercase tracking-widest">Direito Corporativo Estratégico</p>
                         </div>
                     </div>
-                    <div class="flex gap-8 text-sm font-medium text-gray-400">
-                        <a class="hover:text-accent transition-colors uppercase tracking-wide text-xs" href="#">Política
-                            de Privacidade</a>
-                        <a class="hover:text-accent transition-colors uppercase tracking-wide text-xs" href="#">Termos
-                            de Uso</a>
-                        <a class="hover:text-accent transition-colors uppercase tracking-wide text-xs"
-                            href="#">LinkedIn</a>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4 md:gap-8 text-sm font-medium text-gray-400">
+                        <a class="hover:text-accent transition-colors uppercase tracking-wide text-xs" href="#">Política de Privacidade</a>
+                        <a class="hover:text-accent transition-colors uppercase tracking-wide text-xs" href="#">Termos de Uso</a>
+                        <a class="hover:text-accent transition-colors uppercase tracking-wide text-xs" href="#">LinkedIn</a>
                     </div>
-                    <p class="text-xs text-gray-500 font-light">© 2023 Consultoria Jurídica. Todos os direitos
-                        reservados.</p>
+                    <p class="text-xs text-gray-500 font-light"><span class="copyright-year">2025</span> Consultoria Jurídica. Todos os direitos reservados.</p>
                 </div>
             </div>
         </footer>

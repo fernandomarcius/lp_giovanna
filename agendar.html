@@ -4,53 +4,48 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Agendamento de Consultoria | Giovanna Seabra</title>
+    <title>Agendar Consulta de Diagnóstico Estratégico | Giovanna Seabra</title>
+    <meta name="description" content="Agende sua consulta de diagnóstico estratégico de 60 minutos com Giovanna Seabra. Análise personalizada de riscos jurídicos e oportunidades corporativas." />
+    <meta name="keywords" content="agendamento consulta, consultoria jurídica, diagnóstico legal, consulta empresarial, governança corporativa" />
+    <meta name="author" content="Giovanna Seabra" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.consultoriajuridica.com.br/agendar.html" />
+    <meta property="og:title" content="Agendar Consulta de Diagnóstico Estratégico" />
+    <meta property="og:description" content="Sessão de 60 minutos para análise personalizada de riscos jurídicos e oportunidades corporativas." />
+    <meta property="og:image" content="https://www.consultoriajuridica.com.br/assets/Logo.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.consultoriajuridica.com.br/agendar.html" />
+    <meta property="twitter:title" content="Agendar Consulta | Giovanna Seabra" />
+    <meta property="twitter:description" content="Sessão de diagnóstico estratégico para análise de riscos jurídicos e oportunidades." />
+    <meta property="twitter:image" content="https://www.consultoriajuridica.com.br/assets/Logo.png" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.consultoriajuridica.com.br/agendar.html" />
+
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap"
+
+    <!-- Preload critical fonts -->
+    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/publicsans/v15/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuFpm5ww0pX189fg.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtM.woff2" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700;900&amp;family=Playfair+Display:wght@400;700&amp;display=swap"
         rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
     <link href="animations.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#0a192f", // Deep Navy Blue
-                        "secondary": "#3a3a3a", // Graphite Gray
-                        "accent": "#c5a059", // Matte Gold
-                        "background-light": "#f8f9fa",
-                        "background-dark": "#0a192f",
-                    },
-                    fontFamily: {
-                        "display": ["Public Sans", "sans-serif"]
-                    },
-                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
-                    backgroundImage: {
-                        'map-pattern': "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
-                    }
-                },
-            },
-        }
-    </script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings:
-                'FILL' 0,
-                'wght' 400,
-                'GRAD' 0,
-                'opsz' 24
-        }
-    </style>
+    <script src="tailwind-config.js"></script>
 </head>
 
 <body
-    class="bg-background-light dark:bg-background-dark font-display text-secondary dark:text-gray-200 antialiased overflow-x-hidden flex flex-col min-h-screen">
-    <header class="sticky top-0 z-50 w-full bg-primary/95 backdrop-blur-sm border-b border-white/10">
+    class="bg-background-light dark:bg-background-dark font-sans text-secondary dark:text-gray-300 antialiased overflow-x-hidden flex flex-col min-h-screen">
+    <header class="sticky top-0 z-50 w-full bg-primary/95 backdrop-blur-sm border-b border-white/10" role="banner">
         <div class="px-4 md:px-10 py-4 flex items-center justify-between mx-auto max-w-7xl">
             <div class="flex items-center gap-3">
                 <a href="index.html" class="flex items-center gap-3 group">
@@ -59,7 +54,7 @@
                     </div>
                 </a>
             </div>
-            <nav class="hidden md:flex items-center gap-8">
+            <nav class="hidden md:flex items-center gap-8" role="navigation" aria-label="Navegação principal">
                 <a class="text-sm font-semibold text-gray-300 hover:text-accent transition-colors uppercase tracking-wide"
                     href="index.html">Home</a>
                 <a class="text-sm font-semibold text-gray-300 hover:text-accent transition-colors uppercase tracking-wide"
@@ -75,7 +70,7 @@
             </div>
         </div>
     </header>
-    <main class="flex-grow w-full bg-background-light dark:bg-background-dark py-12 md:py-16">
+    <main id="main-content" role="main" class="flex-grow w-full bg-background-light dark:bg-background-dark py-12 md:py-16">
         <div class="container mx-auto px-4 max-w-7xl">
             <div
                 class="grid grid-cols-1 lg:grid-cols-12 gap-12 bg-white dark:bg-gray-900 rounded-sm shadow-2xl overflow-hidden min-h-[800px]">
@@ -136,7 +131,8 @@
                             <div class="w-12 h-12 rounded-full border-2 border-accent overflow-hidden">
                                 <img alt="Giovanna Seabra"
                                     class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLlzSXRszJwRGJGDRg-VjtR_qqvoQXXJHoWcsDOUPTB2Us-1_R5Ws_znm2NMBsX8-1Mm4VB5OZRrWEDMhJWAkT6sfMUKw0QlNp_K8ZmiyAKiwwWy-ZCLdJZH0a96_yZ9M8PGn4pppz81djETUs7sSXFKfoW9Qz50oo_MEn6DbiwNjV9lhQH6PORUnqvLnpIKM6h7wA9foGNrGy8trFRl5_CsFAqQvUapsjEqOCwTXuiLpr43HN1_u06ZKbZu7HU_nq7dglXMR-gFE" />
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLlzSXRszJwRGJGDRg-VjtR_qqvoQXXJHoWcsDOUPTB2Us-1_R5Ws_znm2NMBsX8-1Mm4VB5OZRrWEDMhJWAkT6sfMUKw0QlNp_K8ZmiyAKiwwWy-ZCLdJZH0a96_yZ9M8PGn4pppz81djETUs7sSXFKfoW9Qz50oo_MEn6DbiwNjV9lhQH6PORUnqvLnpIKM6h7wA9foGNrGy8trFRl5_CsFAqQvUapsjEqOCwTXuiLpr43HN1_u06ZKbZu7HU_nq7dglXMR-gFE"
+                                    width="48" height="48" loading="lazy" />
                             </div>
                             <div>
                                 <p class="text-sm font-bold text-white">Giovanna Seabra</p>
@@ -175,27 +171,27 @@
                                 <div class="text-gray-400 font-medium py-2">S</div>
                                 <div class="p-2"></div>
                                 <div class="p-2"></div>
-                                <button class="p-2 text-gray-400 cursor-not-allowed">1</button>
-                                <button class="p-2 text-gray-400 cursor-not-allowed">2</button>
+                                <button class="p-2 min-w-[44px] min-h-[44px] text-gray-400 cursor-not-allowed flex items-center justify-center">1</button>
+                                <button class="p-2 min-w-[44px] min-h-[44px] text-gray-400 cursor-not-allowed flex items-center justify-center">2</button>
                                 <button
-                                    class="p-2 text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded">3</button>
+                                    class="p-2 min-w-[44px] min-h-[44px] text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded flex items-center justify-center">3</button>
                                 <button
-                                    class="p-2 text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded">4</button>
-                                <button class="p-2 text-gray-400 cursor-not-allowed">5</button>
-                                <button class="p-2 text-gray-400 cursor-not-allowed">6</button>
-                                <button class="p-2 text-gray-400 cursor-not-allowed">7</button>
+                                    class="p-2 min-w-[44px] min-h-[44px] text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded flex items-center justify-center">4</button>
+                                <button class="p-2 min-w-[44px] min-h-[44px] text-gray-400 cursor-not-allowed flex items-center justify-center">5</button>
+                                <button class="p-2 min-w-[44px] min-h-[44px] text-gray-400 cursor-not-allowed flex items-center justify-center">6</button>
+                                <button class="p-2 min-w-[44px] min-h-[44px] text-gray-400 cursor-not-allowed flex items-center justify-center">7</button>
                                 <button
-                                    class="p-2 text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded">8</button>
+                                    class="p-2 min-w-[44px] min-h-[44px] text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded flex items-center justify-center">8</button>
                                 <button
-                                    class="p-2 bg-primary text-white rounded font-bold shadow-md ring-2 ring-accent ring-offset-2 ring-offset-white dark:ring-offset-gray-800">9</button>
+                                    class="p-2 min-w-[44px] min-h-[44px] bg-primary text-white rounded font-bold shadow-md ring-2 ring-accent ring-offset-2 ring-offset-white dark:ring-offset-gray-800 flex items-center justify-center">9</button>
                                 <button
-                                    class="p-2 text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded">10</button>
+                                    class="p-2 min-w-[44px] min-h-[44px] text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded flex items-center justify-center">10</button>
                                 <button
-                                    class="p-2 text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded">11</button>
-                                <button class="p-2 text-gray-400 cursor-not-allowed">12</button>
-                                <button class="p-2 text-gray-400 cursor-not-allowed">13</button>
+                                    class="p-2 min-w-[44px] min-h-[44px] text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded flex items-center justify-center">11</button>
+                                <button class="p-2 min-w-[44px] min-h-[44px] text-gray-400 cursor-not-allowed flex items-center justify-center">12</button>
+                                <button class="p-2 min-w-[44px] min-h-[44px] text-gray-400 cursor-not-allowed flex items-center justify-center">13</button>
                                 <button
-                                    class="p-2 text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded">14</button>
+                                    class="p-2 min-w-[44px] min-h-[44px] text-primary dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 rounded flex items-center justify-center">14</button>
                             </div>
                             <div class="border-t border-gray-200 dark:border-gray-700 pt-6">
                                 <h4 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">Horários
@@ -226,15 +222,15 @@
                                         class="text-xs font-bold text-secondary dark:text-gray-400 uppercase tracking-wide ml-1"
                                         for="fullName">Nome Completo</label>
                                     <input
-                                        class="w-full px-4 py-3 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-primary dark:text-white focus:ring-1 focus:ring-accent focus:border-accent outline-none transition-all placeholder:text-gray-400"
-                                        id="fullName" placeholder="Ex: Maria Silva" type="text" />
+                                        class="w-full px-4 py-3 rounded-sm border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-primary dark:text-white focus:ring-1 focus:ring-accent focus:border-accent outline-none transition-all placeholder:text-gray-400"
+                                        id="fullName" placeholder="Ex: Maria Silva" type="text" required />
                                 </div>
                                 <div class="space-y-1">
                                     <label
                                         class="text-xs font-bold text-secondary dark:text-gray-400 uppercase tracking-wide ml-1"
                                         for="companyName">Empresa</label>
                                     <input
-                                        class="w-full px-4 py-3 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-primary dark:text-white focus:ring-1 focus:ring-accent focus:border-accent outline-none transition-all placeholder:text-gray-400"
+                                        class="w-full px-4 py-3 rounded-sm border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-primary dark:text-white focus:ring-1 focus:ring-accent focus:border-accent outline-none transition-all placeholder:text-gray-400"
                                         id="companyName" placeholder="Ex: Silva &amp; Associados" type="text" />
                                 </div>
                             </div>
@@ -243,22 +239,22 @@
                                     class="text-xs font-bold text-secondary dark:text-gray-400 uppercase tracking-wide ml-1"
                                     for="corpEmail">E-mail Corporativo</label>
                                 <input
-                                    class="w-full px-4 py-3 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-primary dark:text-white focus:ring-1 focus:ring-accent focus:border-accent outline-none transition-all placeholder:text-gray-400"
-                                    id="corpEmail" placeholder="nome@empresa.com.br" type="email" />
+                                    class="w-full px-4 py-3 rounded-sm border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-primary dark:text-white focus:ring-1 focus:ring-accent focus:border-accent outline-none transition-all placeholder:text-gray-400"
+                                    id="corpEmail" placeholder="nome@empresa.com.br" type="email" required />
                             </div>
                             <div class="space-y-1">
                                 <label
                                     class="text-xs font-bold text-secondary dark:text-gray-400 uppercase tracking-wide ml-1"
                                     for="challenge">Descreva seu desafio jurídico</label>
                                 <textarea
-                                    class="w-full px-4 py-3 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-primary dark:text-white focus:ring-1 focus:ring-accent focus:border-accent outline-none transition-all placeholder:text-gray-400 resize-none"
+                                    class="w-full px-4 py-3 rounded-sm border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-primary dark:text-white focus:ring-1 focus:ring-accent focus:border-accent outline-none transition-all placeholder:text-gray-400 resize-none"
                                     id="challenge" placeholder="Breve resumo do contexto para prepararmos a reunião..."
-                                    rows="4"></textarea>
+                                    rows="4" required></textarea>
                             </div>
                             <div class="pt-4">
                                 <button
-                                    class="w-full bg-accent hover:bg-[#b08d4b] text-white font-bold py-4 rounded shadow-lg shadow-accent/20 transition-all active:scale-[0.99] uppercase tracking-widest text-sm flex items-center justify-center gap-2 group"
-                                    type="button">
+                                    class="w-full bg-accent hover:bg-accent-hover text-white font-bold py-4 rounded-sm shadow-lg shadow-accent/20 transition-all active:scale-[0.99] uppercase tracking-widest text-sm flex items-center justify-center gap-2 group"
+                                    type="submit">
                                     Confirmar Agendamento
                                     <span
                                         class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
@@ -272,7 +268,7 @@
             </div>
         </div>
     </main>
-    <footer class="bg-primary text-white py-16 border-t border-white/10">
+    <footer class="bg-primary text-white py-16 border-t border-white/10" role="contentinfo">
         <div class="container mx-auto px-4 max-w-7xl">
             <div class="flex flex-col md:flex-row justify-between items-center gap-10">
                 <div class="flex items-center gap-4">
@@ -284,14 +280,14 @@
                         <p class="text-xs text-accent uppercase tracking-widest">Direito Corporativo Estratégico</p>
                     </div>
                 </div>
-                <div class="flex gap-8 text-sm font-medium text-gray-400">
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 md:gap-8 text-sm font-medium text-gray-400">
                     <a class="hover:text-accent transition-colors uppercase tracking-wide text-xs" href="#">Política de
                         Privacidade</a>
                     <a class="hover:text-accent transition-colors uppercase tracking-wide text-xs" href="#">Termos de
                         Uso</a>
                     <a class="hover:text-accent transition-colors uppercase tracking-wide text-xs" href="#">LinkedIn</a>
                 </div>
-                <p class="text-xs text-gray-500 font-light">© 2023 Consultoria Jurídica. Todos os direitos reservados.
+                <p class="text-xs text-gray-500 font-light"><span class="copyright-year">2025</span> Consultoria Jurídica. Todos os direitos reservados.
                 </p>
             </div>
         </div>

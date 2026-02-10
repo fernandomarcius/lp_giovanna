@@ -1,0 +1,217 @@
+/**
+ * Global Styles for Giovanna Seabra Landing Page
+ * Shared across all pages for consistency
+ */
+
+/* ===========================
+   Smooth Scrolling
+   =========================== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===========================
+   Material Symbols Configuration
+   =========================== */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    user-select: none;
+}
+
+/* Gold icon variant */
+.icon-gold {
+    color: #c5a059;
+}
+
+/* ===========================
+   Reusable Button Styles
+   =========================== */
+.btn-primary {
+    @apply px-8 py-4 bg-primary text-white font-bold uppercase rounded shadow-md hover:bg-primary/90 transition-all duration-300;
+}
+
+.btn-accent {
+    @apply px-8 py-4 bg-accent text-white font-bold uppercase rounded shadow-md hover:bg-accent-hover transition-all duration-300;
+}
+
+.btn-outline {
+    @apply px-8 py-4 border-2 border-accent text-accent font-bold uppercase rounded hover:bg-accent hover:text-white transition-all duration-300;
+}
+
+/* ===========================
+   Card Styles
+   =========================== */
+.card {
+    @apply bg-white dark:bg-navy-light rounded-lg shadow-medium p-6 transition-all duration-300;
+}
+
+.card-hover {
+    @apply hover:shadow-strong hover:-translate-y-1;
+}
+
+/* ===========================
+   Background Overlays
+   =========================== */
+.bg-map-overlay {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-map-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 25, 47, 0.92);
+    z-index: 0;
+}
+
+.bg-map-overlay > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===========================
+   Typography Utilities
+   =========================== */
+.heading-display {
+    @apply font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+}
+
+.heading-section {
+    @apply font-display text-2xl md:text-3xl lg:text-4xl font-bold;
+}
+
+.heading-subsection {
+    @apply font-display text-xl md:text-2xl lg:text-3xl font-semibold;
+}
+
+.text-body {
+    @apply font-sans text-base md:text-lg leading-relaxed text-gray-600 dark:text-gray-300;
+}
+
+/* ===========================
+   Link Styles
+   =========================== */
+.link-underline {
+    @apply relative inline-block;
+}
+
+.link-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #c5a059;
+    transition: width 0.3s ease;
+}
+
+.link-underline:hover::after {
+    width: 100%;
+}
+
+/* ===========================
+   Form Styles
+   =========================== */
+.form-input {
+    @apply w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-200;
+}
+
+.form-textarea {
+    @apply w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-200 resize-vertical;
+}
+
+.form-label {
+    @apply block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2;
+}
+
+.form-error {
+    @apply text-sm text-red-600 mt-1;
+}
+
+/* ===========================
+   Hover Micro-Interactions
+   =========================== */
+.hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+}
+
+.hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+}
+
+.hover-brightness {
+    @apply transition-all duration-300 hover:brightness-110;
+}
+
+/* ===========================
+   Loading States
+   =========================== */
+.loading-spinner {
+    @apply inline-block w-6 h-6 border-4 border-gray-300 border-t-accent rounded-full animate-spin;
+}
+
+/* ===========================
+   Responsive Utilities
+   =========================== */
+@media (max-width: 640px) {
+    /* Ensure minimum tap targets of 44x44px */
+    button, a[role="button"] {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+/* ===========================
+   Print Styles
+   =========================== */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+}
+
+/* ===========================
+   Dark Mode Enhancements
+   =========================== */
+@media (prefers-color-scheme: dark) {
+    /* Automatically enhance contrast in dark mode */
+    img {
+        opacity: 0.9;
+    }
+
+    img:hover {
+        opacity: 1;
+    }
+}
+
+/* ===========================
+   Focus Visible (for keyboard navigation)
+   =========================== */
+*:focus-visible {
+    outline: 2px solid #c5a059;
+    outline-offset: 2px;
+}
+
+/* ===========================
+   Selection Styling
+   =========================== */
+::selection {
+    background-color: #c5a059;
+    color: white;
+}
+
+::-moz-selection {
+    background-color: #c5a059;
+    color: white;
+}
